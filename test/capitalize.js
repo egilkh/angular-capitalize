@@ -15,10 +15,10 @@ describe('angular-capitalize', function () {
 
   expected.first = [
     'This is lowercase',
-    'This is uppercase',
-    'This is random case of evil',
-    'Nothing to be afraid of?',
-    'Q&a with steve jobs: \'that\'s what happens in technology\'',
+    'THIS IS UPPERCASE',
+    'This is RanDom CAse Of Evil',
+    'Nothing To Be afraid of?',
+    'Q&A With Steve Jobs: \'That\'s What HAPPENS In TechNOlogy\'',
   ];
 
   expected.all = [

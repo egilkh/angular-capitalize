@@ -52,12 +52,11 @@ angular.module('ehFilters', [])
       format = format || 'first';
       input = input || '';
 
-      // Lowercase to work with the input.
-      input = lower(input);
-
       if (format === 'first') {
         return upper(input.substring(0, 1)) + input.substring(1);
       } else if (format === 'all') {
+        input = lower(input);
+
         var words = input.split(' ');
         words.forEach(function (word, i) {
 
@@ -73,10 +72,10 @@ angular.module('ehFilters', [])
 
         return words.join(' ');
       } else if (format === 'none') {
-        // Just return the already lowercased input.
-        return input;
+        // Just return the lowercased input.
+        return lower(input);
       } else if (format === 'title') {
-
+        input = lower(input);
         /*
          * Ported to JavaScript By John Resig - http://ejohn.org/ - 21 May 2008
          * Original by John Gruber - http://daringfireball.net/ - 10 May 2008
