@@ -71,6 +71,9 @@ angular.module('ehFilters', [])
         });
 
         return words.join(' ');
+      } else if (format === 'firstChar') {
+        input = lower(input);
+        return upper(input.substring(0, 1)) + input.substring(1);
       } else if (format === 'none') {
         // Just return the lowercased input.
         return lower(input);

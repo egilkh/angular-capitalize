@@ -10,7 +10,7 @@ describe('angular-capitalize', function () {
     'Q&A With Steve Jobs: \'That\'s What HAPPENS In TechNOlogy\'',
   ];
 
-  var formats = ['first', 'all', 'title', 'none'];
+  var formats = ['first', 'firstChar', 'all', 'title', 'none'];
   var expected = {};
 
   expected.first = [
@@ -19,6 +19,14 @@ describe('angular-capitalize', function () {
     'This is RanDom CAse Of Evil',
     'Nothing To Be afraid of?',
     'Q&A With Steve Jobs: \'That\'s What HAPPENS In TechNOlogy\'',
+  ];
+
+  expected.firstChar = [
+    'This is lowercase',
+    'This is uppercase',
+    'This is random case of evil',
+    'Nothing to be afraid of?',
+    'Q&a with steve jobs: \'that\'s what happens in technology\'',
   ];
 
   expected.all = [
