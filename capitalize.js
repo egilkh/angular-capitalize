@@ -6,6 +6,8 @@
  * LICENSE: MIT
  */
 
+/* globals angular: true */
+
 angular.module('ehFilters', [])
   .filter('capitalize', function () {
 
