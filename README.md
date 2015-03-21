@@ -25,3 +25,25 @@ Include `capitalize.js`:
 Filter things:
 
 `{{ 'Some string' | capitalize }}` or `{{ 'random string' | capitalize:'firstChar' }}` or any other method.
+
+## Formats
+
+### first
+
+Uppercases the first char of the string. Does not change the rest.
+
+### all
+
+Uppercases first char for each word in the string.
+
+### firstChar
+
+Uppcases the first char of the string, lowercases the rest.
+
+### none
+
+Lowercases the whole string.
+
+### title
+
+Uses John Gruber and John Resig method of capitalizing a title.
