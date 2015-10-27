@@ -11,6 +11,9 @@
 angular.module('ehFilters', [])
   .filter('capitalize', function () {
 
+    var small = '(a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v[.]?|via|vs[.]?)';
+    var punct = '([!\'#$%&\'()*+,./:;<=>?@[\\\\\\]^_`{|}~-]*)';
+
     var upper = function (str) {
       return str.substr(0,1).toUpperCase() + str.substr(1);
     };
@@ -45,10 +48,8 @@ angular.module('ehFilters', [])
       return index;
     };
 
-    var small = '(a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v[.]?|via|vs[.]?)';
-    var punct = '([!\'#$%&\'()*+,./:;<=>?@[\\\\\\]^_`{|}~-]*)';
-
     return function (input, format) {
+
       format = format || 'first';
       input = input || '';
 
