@@ -18,9 +18,9 @@ Add a dependency on `ehFilters` to your Angular module:
 
 `angular.module('awesome', ['ehFilters']);`
 
-Include `capitalize.js`:
+Include the module of your locale, e.g.:
 
-`<script src="capitalize.js"></script>`
+`<script src="angular-capitalize_en-us.js"></script>`
 
 Filter things:
 

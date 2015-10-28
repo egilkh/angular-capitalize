@@ -6,7 +6,6 @@
     "egilkh <egilkh@gmail.com>"
   ],
   "description": "AngularJS capitalize filter for sentences or words.",
-  "main": "capitalize.js",
   "keywords": [
     "angularjs",
     "capitalization",
