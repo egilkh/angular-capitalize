@@ -25,6 +25,7 @@ Include the module, e.g.:
 ### Locale
 
 Include locale file if you need:
+
 `<script src="angular-capitalize-locale_pt-br.js"></script>`
 
 Filter things:
