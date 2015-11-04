@@ -109,11 +109,7 @@ angular.module('ehFilters', [])
           }
         }
 
-        return parts.join('').replace(/ V(s?)\. /ig, ' v$1. ')
-          .replace(/(['Õ])S\b/ig, '$1s')
-          .replace(/\b(AT&T|Q&A)\b/ig, function(all){
-            return all.toUpperCase();
-          });
+        return capitalizeLocale.parts(parts);
       } else {
         throw new Error('Format is unknown.');
       }
